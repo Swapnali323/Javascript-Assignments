@@ -1,0 +1,36 @@
+<!-- <html>
+    <script type="text/javascript">
+    a=prompt("enter a number")
+  
+     
+        if(a%2==0){
+            document.write("even")
+        }
+        else{
+            document.write("odd")
+        }
+       
+    
+    </script>
+ 
+</html> -->
+<html>
+    <script type="text/javascript">
+    function findEvenOdd(){
+        var a = document.getElementById('a').value;
+        if(a%2==0){
+            document.getElementById('result').innerHTML=a + ' is a even number'
+        }
+        else{
+            document.getElementById('result').innerHTML=a + ' is a odd number'
+        }
+    }
+    </script>
+
+    <body>
+        Enter a number :
+        <input type="number" id="a" min="0">
+        <input type="button" value="find even or odd" onclick="findEvenOdd()">
+        <div id="result"></div>
+    </body>
+</html>

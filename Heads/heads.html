@@ -1,0 +1,27 @@
+<html>
+    <script type="text/javascript">
+    var heads = 0, tails = 0;
+     function coinFlip() {
+        
+      return(Math.floor(Math.random()*2) === 0) ? 'Heads' : 'Tails';
+     }
+     for (var i = 0; i < coinToss.length; i++)
+ {
+      var headCount = 0, tailCount = 0;
+
+      if (coinToss["Result"] === 'heads')
+            headCount++;
+      else
+            tailCount++;
+ }
+ document.getElementByID.innerHTML += "Heads: " + headCount + " " + "Tails: " + tailCount + "<br>";
+    
+    </script>
+     <body>
+        Enter a number :
+        <input type="number" id="heads" min="0">
+        <input type="button" value="click" onclick="coinFlip()">
+        <div id="headCount"></div>
+    </body>
+    </html>
+        
