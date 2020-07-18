@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet Authorized User</title>
+</head>
+<body>
+   <script>
+       var name = window.prompt("Enter your name: ");
+     
+       if( name == "Alice" || name == "Bob" ){
+        alert(" WELCOME " + name);
+       }
+       else{
+        if( name != "Alice" || name != "Bob" ){
+        alert( name + " you are an not an authorized user");
+       }
+       
+    }
+
+   </script>
+</body>
+</html>

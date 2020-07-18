@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title> Roll a dice</title>
+</head>
+
+<body>
+    
+    <button
+        onclick="rollDiceToGetSix()">Check</button>
+    <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function rollDiceToGetSix() {
+            var rolls = 1;
+             do{
+                rolls++;
+            }while (Math.random() < 5 / 6)
+            document.getElementById("output").innerHTML = rolls;
+        }
+    </script>
+</body>
+
+</html>

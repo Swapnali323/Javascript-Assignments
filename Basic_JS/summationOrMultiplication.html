@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summation or Multiplication</title>
+</head>
+<body>
+    Enter a number :
+    <input name="num" id="num" type="number" #num ><br><br>
+
+  Choose one option :
+    Summation :
+    <input type="radio" name="select" id="select" onclick="summation()"><br>
+
+   Multiplication : 
+    <input type="radio" name="select" id="select" onclick="multiplication()">
+
+    <p id="output"></p>
+
+    <script>
+
+        function summation(){
+
+            var userValue = document.getElementById("num");
+            var num = userValue.value;
+            var result = 0;
+            for(let i=1; i<=num; i++){
+                result += i;
+            }
+            document.getElementById("output").innerHTML = "Total Sum is "+result;
+        }
+
+        function multiplication(){
+
+            var userValue = document.getElementById("num");
+            var num = userValue.value;
+            var result = 1;
+            for(let j=1; j<=num; j++){
+                    result =result * j;
+            }
+
+            document.getElementById("output").innerHTML = "Product is "+result;
+        }
+
+
+    </script>
+</body>
+</html>

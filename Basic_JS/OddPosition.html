@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers on odd position </title>
+</head>
+<body>
+  
+        
+    <p id="output"></p>
+
+    <p id="result"></p>
+    <script>
+
+       function oddPosition(){
+           
+           var list = [32, 56, 78, 23, 54, 01];
+           var result = [];
+           var j = 0;
+
+           for(let i=0; i<list.length ; i++){
+               if( i%2 == 0 ){
+                   result[j++] = list[i];
+               }
+           }
+           
+           document.getElementById("output").innerHTML = "Original List"+list;
+
+           document.getElementById("result").innerHTML = "Numbers At Odd Position "+result;
+
+       }
+
+       oddPosition();
+    </script>
+     
+     <p id="output"></p>
+
+     <p id="result"></p>
+</body>
+</html>

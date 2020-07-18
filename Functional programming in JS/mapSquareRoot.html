@@ -1,0 +1,24 @@
+
+<html>
+    <head>
+        <title>Map Square Root Function</title>
+    </head>
+    <body>
+        <p id="output"></p>
+        <script>
+    
+            function map( array , funct ){
+                var length = array.length;
+                var result = [];
+    
+                for( let i=0; i<length; i++){
+                    var squareRoot = funct(array[i]);
+                    result.push(squareRoot);
+                }
+                document.getElementById("output").innerHTML = "["+result+"]";
+            }
+    
+            map([1,4,9,16,25], Math.sqrt);
+        </script>
+    </body>
+    </html>

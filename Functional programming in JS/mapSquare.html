@@ -1,0 +1,27 @@
+
+<html>
+<head>
+    <title>Map Square Function</title>
+</head>
+<body>
+    <p id="output"></p>
+    <script>
+        function square(num){
+            return num*num;
+        }
+
+        function map( array , funct ){
+            var length = array.length;
+            var result = [];
+
+            for( let i=0; i<length; i++){
+                var square = funct(array[i]);
+                result.push(square);
+            }
+            document.getElementById("output").innerHTML = "["+result+"]";
+        }
+
+        map([1 , 2 , 3 , 4 , 5], square);
+    </script>
+</body>
+</html>

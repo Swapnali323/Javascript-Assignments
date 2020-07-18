@@ -1,0 +1,26 @@
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of 1 to n Numbers</title>
+</head>
+<body>
+    Enter a number until which you want to sum :
+    <input name="num" id="num" type="number" #num oninput="sum(num.value)">
+    <!-- <input type="Submit" onclick="sumnaturalnumber(document.getElementById('n').value);"> -->
+    <p id="text"></p>
+    <script>
+        function sum(num){
+            var result = 0;
+
+            for(let i=1; i<=num; i++){
+                result += i;
+            }
+
+            document.getElementById("text").innerHTML = "Total Sum is "+result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <body>
+        
+<script>
+
+function bankAccount(accountNumber,accountHolderName,accountBalance)
+    {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.accountBalance = accountBalance;
+    }
+
+    savingsAccount = new bankAccount(1234,"swapnali jadhav",20000,"yes");
+    currentAccount = new bankAccount(6789,"Neha Jadhav",30000,"no");
+
+    function withdraw(amount){
+       accountBalance=accountBalance-amount;
+       document.getElementById("output").innerHTML = accountBalance;
+    }
+    function getCurrentBalance(){
+        accountBalance;
+        document.getElementById("balance").innerHTML = accountBalance;
+    }
+    
+        </script>
+     
+            Enter amount: <input type="num" id="num">
+            <button type="button" onclick="withdraw(document.getElementById(amount).value)"> Submit </button>
+            <p> Output: <div id="output"></div> </p>
+            <input id="balance" onclick="getCurrentBalance()">
+        </body>
+</html>

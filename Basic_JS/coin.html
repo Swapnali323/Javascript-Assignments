@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip a coin</title>
+</head>
+<body>
+    <p>flips a coin that many times and returns the number of heads.</p>
+    <div>
+        Enter Number :
+        <input name="num" id="num" type="number">
+        <input type="submit" onclick="numHeads(num.value)">
+        <p id="output"></p>
+    </div>
+    <script>
+        function numHeads(num){
+            var arr = ["Head", "Tail"];
+            var count=0;
+                for(let i=0; i<num; i++){
+                    var result = Math.floor(Math.random() * 2);
+                    console.log(arr[result]);
+                    if( arr[result] == "Head" ){
+                        count++;
+                    }
+            }
+            document.getElementById("output").innerHTML = "Head Occurs "+count+" times" ;
+        }
+    </script>
+</body>
+</html>

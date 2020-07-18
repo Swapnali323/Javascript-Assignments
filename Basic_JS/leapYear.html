@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <label for="year">"Enter the year to check for next 20 leap years :"</label>
+    <input type="number" name="year" id="year"  oninput="leapYear()">
+    
+    <p id="output"></p>
+    
+    <script>
+
+        function leapYear(){
+           
+           var userValue = document.getElementById("year");
+            var year = userValue.value;
+
+            var array = [];
+            var count = 0;
+
+        
+                while(count < 20){
+                    if(year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)){
+                        array.push(year);
+                        year++;
+                        count++;
+                    }
+                    else{
+                        year++;
+                    }
+                }
+
+            document.getElementById("output").innerHTML = array;
+        }
+         
+    </script>
+</body>
+</html>
