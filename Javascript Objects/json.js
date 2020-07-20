@@ -1,8 +1,8 @@
-var fullName={
-    fname : "Swapna",
-    lname : ["Jadhav","XYZ"]
-}
-console.log(fullName.fname)
-console.log(fullName.lname)
-console.log(fullName.lname[0])
-console.log(fullName)
+var fullName = '{ "fname" : "Swapnali" ,  "lname" : "Jadhav" }';
+
+var obj = JSON.parse(fullName);
+
+console.log(obj.fname)
+console.log(obj.lname)
+
+
